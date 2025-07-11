@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center><h1>QUIZ</h1></center>
+    <div class="quiz-container">
+    <div id="question-box">
+      <div class="question" id="question"></div>
+      <div class="answers" id="answers"></div>
+      <div class="timer"><div class="progress-bar" id="progress-bar"></div></div>
+    </div>
+    <button id="submit-btn" onclick="submitAnswer()">Submit</button>
+  </div>
+
+ <div class="result-modal" id="result-modal">
+  <div class="result-content">
+    <h2>Your Score</h2>
+    <div id="score"></div>
+    <div id="stars" style="font-size: 30px; color: gold; margin-top: 10px;">
+    </div>
+    <div id="top-scores" style="margin-top: 20px;">
+      <h3>Top 5 Scores:</h3>
+      <ul id="score-list" style="list-style: none; padding: 0; font-weight: bold;"></ul>
+    </div>
+  </div>
+</div>
+
+  
+
+    <script src="script.js"></script>
+</body>
+</html>
